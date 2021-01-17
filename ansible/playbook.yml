@@ -10,5 +10,5 @@
     - name: Test copy
       copy:
         src: test.txt
-        dst: /home/ec2-user/test.txt
+        dest: /home/ec2-user/test.txt
         mode: '0644'
