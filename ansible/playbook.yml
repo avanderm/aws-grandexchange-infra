@@ -5,4 +5,4 @@
   tasks:
     - name: Add influx yum repository
       debug:
-        msg: This is a test message
+        msg: The directory is {{playbook_dir}}

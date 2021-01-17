@@ -16,7 +16,9 @@ export class AwsGrandexchangeInfraStack extends cdk.Stack {
           JSON.stringify({
             "owner": "avanderm",
             "repository": "aws-grandexchange-infra",
-            "path": "ansible"
+            "path": "ansible",
+            "getOptions": "branch:master",
+            "tokenInfo": "{{ssm-secure:/github/token}}",
           })
         ],
         "InstallDependencies": ['True'],
