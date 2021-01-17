@@ -6,9 +6,3 @@
     - name: Add influx yum repository
       debug:
         msg: This is a test message
-
-    - name: Test copy
-      copy:
-        src: test.txt
-        dest: /home/ec2-user/test.txt
-        mode: '0644'
