@@ -5,9 +5,9 @@
   tasks:
     - name: Add influx yum repository
       debug:
-        msg: The directory is {{playbook_dir}}
+        msg: The directory is {{ playbook_dir }}
 
     - name: Copy test
       copy:
-        src: {{playbook_dir}}/test.txt
+        src: "{{ playbook_dir }}/test.txt"
         dest: /home/ec2-user/test.txt
