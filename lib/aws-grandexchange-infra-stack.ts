@@ -15,11 +15,12 @@ export class AwsGrandexchangeInfraStack extends cdk.Stack {
         "SourceInfo": [
           JSON.stringify({
             "owner": "avanderm",
-            "repository": "aws-grandexchange-infra"
+            "repository": "aws-grandexchange-infra",
+            "path": "ansible"
           })
         ],
         "InstallDependencies": ['True'],
-        "PlaybookFile": ["playbooks/playbook.yml"],
+        "PlaybookFile": ["playbook.yml"],
         "ExtraVariables": ["SSM=True"],
         "Check": ["False"],
         "Verbose": ["-v"]

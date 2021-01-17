@@ -1,8 +1,0 @@
----
-- hosts: lightsail
-  become: yes
-
-  tasks:
-    - name: Add influx yum repository
-      debug:
-        msg: This is a test message
